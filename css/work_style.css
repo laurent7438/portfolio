@@ -1,0 +1,70 @@
+#content_work{
+    height: 80vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    background: #070716;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+#slider{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#drag, #spin{
+    position: relative;
+    display:flex;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+}
+#drag a{
+    height: 50%;
+    transform-style: preserve-3d;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    text-align: center;
+    box-shadow: 0 0 8px #fff;
+}
+#drag img{
+    height: 100%;
+    width: 100%;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+#drag a:hover{
+    box-shadow: 0 0 15px #fffd;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+}
+#ground{
+    width: 80vh;
+    height: 80vw;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
+}
+@keyframes  spin {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes  spinRevert {
+    from{
+        transform: rotateY(360deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
+@media screen and (max-width: 750px) {
+
+  }

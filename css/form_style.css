@@ -1,0 +1,160 @@
+/* General Styles */
+#content_form {
+  color: #c0c0c0;
+  height: 100%;
+  box-sizing: border-box;
+  /* text-rendering: optimizeLegibility; */
+}
+
+/* Contact Form Styles */
+h1 {
+  margin: 10px 0 0 0;
+}
+h4 {
+  margin: 0 0 20px 0;
+}
+#contact-form {
+  background-color: rgba(72, 72, 72, 0.9);
+  padding: 10px 20px 30px 20px;
+  max-width: 45vw;
+  margin: auto;
+  margin-top: 3vh;
+  border-radius: 7px;
+}
+#contact-form label,
+#contact-form input,
+#contact-form textarea {
+  font-size: 15px;
+  margin-bottom: 2px;
+  font-family: Arial, san-serif;
+}
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  background: #fff;
+  border: 0;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+#contact-form div{
+  margin-top: 25px;
+}
+#contact-form label:focus,
+#contact-form span:focus,
+#contact-form input:focus,
+#contact-form textarea:focus {
+  background-color: #e5e6e7;
+}
+#contact-form textarea {
+  width: 100%;
+  height: 150px;
+}
+#contact-form button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #991d57;
+  background-image: linear-gradient(bottom, #8c1c50 0%, #991d57 52%);
+  background-image: -moz-linear-gradient(bottom, #8c1c50 0%, #991d57 52%);
+  background-image: -webkit-linear-gradient(bottom, #8c1c50 0%, #991d57 52%);
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#contact-form button[type="submit"]:hover {
+  background-image: linear-gradient(bottom, #9c215a 0%, #a82767 52%);
+  background-image: -moz-linear-gradient(bottom, #9c215a 0%, #a82767 52%);
+  background-image: -webkit-linear-gradient(bottom, #9c215a 0%, #a82767 52%);
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+/* input:required, textarea:required {  
+  box-shadow: none;
+  -moz-box-shadow: none;  
+  -webkit-box-shadow: none;  
+  -o-box-shadow: none;  
+}  */
+#contact-form .required {  
+  font-weight:bold;  
+  color: #E5E6E7;      
+}
+/* Hide success/failure message
+    (especially since the php is missing) */
+.err{
+  background: #e5e6e7;
+  border-radius: 2px;
+}
+#failure {
+color: rgb(249, 79, 79);
+font-size: larger;
+font-weight: 900;
+
+}
+.error {
+  outline: rgb(249, 79, 79) 3px solid;
+  border-radius: 2px;
+}
+.hidden{
+  outline: auto;
+}
+#success {
+  color: #6ea070;
+  font-size: large;
+}
+.sccss{
+  outline: #6ea070 3px solid;
+  border-radius: 2px;
+}
+
+/* Make form look nice on smaller screens */
+@media screen and (max-width: 1280px) {
+  #contact-form {
+      max-width: 55vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #contact-form {
+      max-width: 60vw;
+  }
+}
+@media screen and (max-width: 970px) {
+  #contact-form {
+      max-width: 65vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contact-form {
+      max-width: 75vw;
+  }
+}
+@media screen and (max-width: 570px) {
+  #contact-form {
+    max-width: 85vw;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  #contact-form {
+    max-width: 90vw;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+}
+/* @media screen and (max-width: 570px) {
+  #contact-form {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+} */
