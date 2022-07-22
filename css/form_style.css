@@ -90,6 +90,7 @@ h4 {
   border-radius: 2px;
 }
 #failure {
+  height: 2vh;
 color: rgb(249, 79, 79);
 font-size: larger;
 font-weight: 900;
@@ -103,6 +104,7 @@ font-weight: 900;
   outline: auto;
 }
 #success {
+  height: 1vh;
   color: #6ea070;
   font-size: large;
 }

@@ -32,7 +32,8 @@ export const Validator = {
     },
     mssag : (mssag) => {
         if(typeof mssag!=="string")throw new Error(`'${mssag}' n'est pas une chaine de caracteres !`);
-        let min=3, max=50;if(!Validator.space(mssag)) return "Commencer ou finir par un espace ou un caractère spécial n'est pas autorisé !";
+        let min=3, max=50;
+        if(!Validator.space(mssag)) return "Commencer ou finir par un espace ou un caractère spécial n'est pas autorisé !";
         if(Validator.lgt(mssag.length,3,500)) return Validator.lgt(mssag.length,3,500);
         // if(!regex) return "sujet non valide";
         return false;

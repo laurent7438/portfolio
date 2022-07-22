@@ -242,6 +242,7 @@ let  mailInput=document.getElementById("mail").value;
 let  sbjtInput=document.getElementById("sbjt").value;
 let  messInput=document.getElementById("mess").value;
 const contactForm = document.getElementById("contact-form");
+
 in_form.addEventListener("change", (e) => {
   e.preventDefault();
   checkinputs();
@@ -311,19 +312,25 @@ contactForm.addEventListener("submit", (e) => {
     sbjtInput == true &&
     messInput == true
   ) {
-    document.getElementById("failure").style.display = "none";
+    document.getElementById("failure").style.color = "transparent";
     document.getElementById("success").innerHTML = "Votre message a été envoyé avec succès. Merci!";
   } else {
-    document.getElementById("success").style.display="none";
+    document.getElementById("success").style.color="transparent";
     document.getElementById("failure").innerHTML = "Ooops...votre message n'a pas pu être envoyé.";
   }
 });
+
+
+
 
 contactForm.addEventListener("click",async  () =>{
   console.log("object");
   let test=await fetch("./mail.php").then(res=>res.text())
   console.log(test);
 });
+
+
+
 
 
 //   checkInputs();
